@@ -28,10 +28,10 @@ public class PostInit {
 
     private void insertPost() {
         List<Post> initPosts = List.of(
-                new Post(1L, "테스트", "자동배포 테스트입니다."),
-                new Post(1L, "안녕", "안녕하세요!"),
-                new Post(1L, "오늘 날짜는", "2025-09-28"),
-                new Post(1L, "title", "body!")
+                new Post(null, "테스트", "자동배포 테스트입니다."),
+                new Post(null, "안녕", "안녕하세요!"),
+                new Post(null, "오늘 날짜는", "2025-09-28"),
+                new Post(null, "title", "body!")
         );
 
         postRepository.saveAll(initPosts);
