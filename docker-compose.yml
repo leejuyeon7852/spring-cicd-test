@@ -4,6 +4,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
     expose:
       - "8080"
     networks:
