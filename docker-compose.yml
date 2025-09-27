@@ -1,9 +1,7 @@
 services:
   app:
-    container_name: sprint-cicd-test
-    build:
-      context: .
-      dockerfile: Dockerfile
+    container_name: cicd-test-server
+    image: juyeon7852/spring-cicd-test:latest
     environment:
       - SPRING_PROFILES_ACTIVE=prod
       - DB_HOST=${DB_HOST}      # 호스트 환경변수를 컨테이너에 전달
